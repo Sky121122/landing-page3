@@ -1,0 +1,156 @@
+*{
+    margin: 0%;
+    user-select: none;
+    padding: 0%;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("pexels-goumbik-628247.jpg");
+    background-size: cover;
+    color: snow;
+    /* overflow-y: hidden; */
+}
+.main{
+    height: 80%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0,1);
+    border-radius: 12px;
+    border: 2px solid black;
+   backdrop-filter: blur(15px);
+   box-shadow: -10px 10px 10px rgba(10, 10, 10, 0.7);
+}
+ .afterImg{
+   position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.afterImg img{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+.afterImg .img:first-child{
+    transform: translateY(-190px) translateX(150px);
+    animation: one 7s ease infinite;
+    z-index: 99;
+
+}
+.afterImg .img:nth-child(2){
+    transform: translateY(230px) translateX(-200px);
+    animation: one 10s ease infinite;
+    z-index: 99;
+
+}
+.afterImg .img:nth-child(3){
+    transform: translateY(-350px) translateX(100px);
+    animation: one 6s ease infinite;
+    z-index: 99;
+}
+.afterImg .img:nth-child(4){
+    transform: translateY(250px) translateX(100px);
+    animation: one 16s ease infinite;
+    z-index: 99;
+}
+
+.afterImg .img:nth-child(5){
+    transform: translateY(-300px) translateX(200px);
+    animation: one 12s ease infinite;
+    z-index: 99;
+}
+
+
+
+
+@keyframes one {
+    0%{
+        transform: scale(0);
+
+    }
+    40%{
+        transform: scale(1);
+
+    }
+}
+
+
+
+
+.main .nav{
+
+    width: 95%;
+    margin: auto;
+    height: 12%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.nav .logo h1{
+    font-size: 2rem;
+}
+.nav .links h3:hover{
+    cursor: pointer;
+    background-color: yellow;
+    padding: 4px 10px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.9);
+    transition: 0.3s ease;
+    color: black;
+}
+.nav .links{
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.main .content{
+    /* background-color: red; */
+    width: 95%;
+    height: 88%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .heading h1{
+    font-size: 7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 3px 2px 6px rgba(10, 10, 10, 0.9);
+    letter-spacing: 3px;
+}
+.content .para{
+    font-size: 1.3rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 3px;
+}
+.btns{
+    height: 4rem;
+    width: 20%;
+    margin: auto;
+    justify-content: space-around;
+    display: flex;
+}
+.btns button{
+    font-size: 1.2rem;
+    width: 100px;
+    height: 50px;
+    border-radius: 12px;
+    margin: 0px 10px;
+    border: 1px solid black;
+    transition: 0.3s ease;
+    box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.9);
+}
+.btns button:hover{
+    background-color: yellow;
+    cursor: pointer;
+    translate: 3px;
+}
